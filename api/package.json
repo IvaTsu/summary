@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node app/server.js",
-    "dev": "nodemon --exec yarn lint && yarn start",
+    "dev": "nodemon --exec \"yarn lint && yarn start\"",
     "lint": "eslint app",
     "lint:fix": "eslint --fix app"
   },
@@ -19,5 +19,8 @@
     "eslint": "^4.15.0",
     "eslint-config-google": "^0.9.1",
     "nodemon": "^1.14.10"
+  },
+  "dependencies": {
+    "koa": "^2.4.1"
   }
 }
