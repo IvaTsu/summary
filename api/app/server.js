@@ -1,9 +1,12 @@
-const user = { name: 'test' };
+import app from './app';
 
-const getName = () => {
-    const { name } = user;
+const PORT = 7700;
 
-    return name;
-};
+const server = app.listen(PORT, (err) => {
+    if (err) console.log(err);
 
-console.log(`name: ${getName()}`);
+    console.log(`Server is running on port: ${PORT}`);
+    console.log(`Open your browser at localhost:${PORT}`);
+});
+
+export default server;
