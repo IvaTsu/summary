@@ -1,6 +1,5 @@
 import app from './app';
-
-const PORT = 7700;
+import { PORT } from './config';
 
 const server = app.listen(PORT, (err) => {
     if (err) console.log(err);
